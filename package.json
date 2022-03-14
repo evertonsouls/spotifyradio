@@ -6,7 +6,22 @@
   "engines": {
     "node": "17"
   },
+  "scripts": {
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js",
+    "test": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage tests/unit"
+  },
   "repository": "git@github-evertonsouls:evertonsouls/spotifyradio.git",
   "author": "evertonsouls <evertonsouls@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "27",
+    "nodemon": "2"
+  },
+  "dependencies": {
+    "pino": "7.8.0",
+    "pino-pretty": "^7.5.3"
+  }
 }
