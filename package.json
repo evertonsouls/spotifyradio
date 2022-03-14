@@ -1,0 +1,12 @@
+{
+  "name": "spotifyradio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "17"
+  },
+  "repository": "git@github-evertonsouls:evertonsouls/spotifyradio.git",
+  "author": "evertonsouls <evertonsouls@gmail.com>",
+  "license": "MIT"
+}
