@@ -6,5 +6,7 @@ describe('#Services - test service for api', () => {
     jest.clearAllMocks()
   })
 
-  test.todo()
+  test("True must be true", () => {
+    expect(true).toBeTruthy()
+  })
 })
